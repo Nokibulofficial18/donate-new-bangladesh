@@ -20,7 +20,7 @@ function addDonationAmount(inputFieldId,donationId,donationType){
     setTextFieldValById('initital-money', remainBalance-inputAmount);
     setTextFieldValById(donationId, donateBalance+inputAmount);
     showDonationModal();
-    historyMakeHelper(donationType,inputAmount);
+    makeDonationHistory(donationType,inputAmount);
 }
 // show and hide history and donation section
 document.getElementById('donation-btn').addEventListener('click',function(){
