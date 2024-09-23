@@ -70,7 +70,7 @@
             <!-- modal  -->
             <dialog id="successful-donation-modal" class="modal modal-top sm:modal-middle">
                 <div class="modal-box text-center">
-                  <h3 class="text-xl font-extrabold mb-2">Congrates!</h3>
+                  <h3 class="text-5xl font-extrabold mb-2">Congrates!</h3>
                   <img src="assets/coin.png" alt="coin" class="mx-auto mb-2" />
                   <p class="mb-2">You Have Donated for Humankind</p>
                   <h1 class="text-2xl font-extrabold mb-2">Successfully</h1>
@@ -114,7 +114,7 @@
                         class="border-2 rounded-lg w-full p-2 pl-4"
                       />
                       <button
-                        onclick="addDonation('input-amount-noakhali', 'noakhali-balance', 'Donated for Flood at Noakhali, Bangladesh')"
+                        onclick="addDonationAmount('input-amount-noakhali', 'noakhali-balance', 'Donated for Flood at Noakhali, Bangladesh')"
                         class="bg-primary w-full p-2 rounded-lg font-semibold text-lg"
                       >
                         Donate Now
@@ -148,7 +148,7 @@
                         class="border-2 rounded-lg w-full p-2 "
                       />
                       <button
-                        onclick="addDonation('input-amount-feni', 'feni-balance', 'Donated for Flood at Feni, Bangladesh')"
+                        onclick="addDonationAmount('input-amount-feni', 'feni-balance', 'Donated for Flood at Feni, Bangladesh')"
                         class="bg-primary w-full p-2 rounded-xl font-semibold text-lg"
                       >
                         Donate Now
@@ -181,7 +181,7 @@
                         class="border-2 rounded-lg w-full p-2 "
                       />
                       <button
-                        onclick="addDonation('input-amount-quota', 'quota-balance', 'Donated for the injured people of Quota Protest')"
+                        onclick="addDonationAmount('input-amount-quota', 'quota-balance', 'Donated for the injured people of Quota Protest')"
                         class="bg-primary w-full p-2 rounded-xl font-semibold text-lg"
                       >
                         Donate Now
@@ -191,7 +191,11 @@
         </section>
         <!-- history section  -->
         <section id="history-section" class="hidden md:container mx-auto my-10 md:my-12">
-            
+            <div id="donation-list">
+                <h1 class="font-extrabold text-3xl text-red-500 text-center">
+                    You didn't donated till now!!!!!
+                </h1>
+            </div>
         </section>
     </main>
     <footer>
