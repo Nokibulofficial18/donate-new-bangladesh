@@ -23,16 +23,18 @@ function addDonationAmount(inputFieldId,donationId,donationType){
     makeDonationHistory(donationType,inputAmount);
 }
 // show and hide history and donation section
-document.getElementById('donation-btn').addEventListener('click',function(){
-    showHideToggle('donation-section');
-    showHideToggle('history-section');
+donationBtn = document.getElementById('donation-btn')
+historyBtn = document.getElementById('history-btn')
+donationBtn.addEventListener('click',function(){
+    document.getElementById('donation-section').classList.remove('hidden');
+    document.getElementById('history-section').classList.add('hidden')
     document.getElementById('donation-btn').style.backgroundColor ='#B4F461';
     document.getElementById('history-btn').style.backgroundColor='transparent';
 })
 
 document.getElementById('history-btn').addEventListener('click',function(){
-    showHideToggle('donation-section');
-    showHideToggle('history-section');
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('history-section').classList.remove('hidden')
     document.getElementById('donation-btn').style.backgroundColor ='transparent';
     document.getElementById('history-btn').style.backgroundColor='#B4F461';
 })

@@ -20,17 +20,6 @@ function showDonationModal(){
     document.getElementById('successful-donation-modal').showModal();
 }
 
-//to toggle history and donation
-
-function showHideToggle(id){
-    let val = document.getElementById(id);
-    if(val.classList.contains('hidden')){
-        val.classList.remove('hidden');
-    }
-    else{
-        val.classList.add('hidden')
-    }
-}
 
 // function to set attributes and inner text of newly donate records to help to make history part
 
