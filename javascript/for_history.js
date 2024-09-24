@@ -22,7 +22,7 @@ function dateAndTime(){
 
 // function of history 
 function makeDonationHistory(donation_type, amount) {
-    showHideToggle('default-text');
+    document.getElementById('default-text').classList.add('hidden')
     const historyBook = document.getElementById('history-section');
     const newHistory = document.createElement('div');
     console.log(5)

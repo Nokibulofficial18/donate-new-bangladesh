@@ -13,7 +13,7 @@ function getTextFieldValById(id){
 
 // to set the text field value by removing initial field
 function setTextFieldValById(id, amount){
-    document.getElementById(id).innerText = amount
+    document.getElementById(id).innerText = amount;
 }
 
 function showDonationModal(){

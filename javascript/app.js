@@ -1,7 +1,7 @@
 // to add donation balance and subtracting the total balance of a user
 
 function addDonationAmount(inputFieldId,donationId,donationType){
-    let remainBalance = getTextFieldValById('initital-money')
+    let remainBalance = getTextFieldValById('initial-money');
     let donateBalance = getTextFieldValById(donationId);
     
     let inputAmount = getInputFieldValById(inputFieldId);
@@ -16,8 +16,8 @@ function addDonationAmount(inputFieldId,donationId,donationType){
     if(inputAmount>remainBalance){
         return alert("Opps! You don't have sufficient balance!!!!")
     }
-
-    setTextFieldValById('initital-money', remainBalance-inputAmount);
+    console.log(remainBalance-inputAmount);
+    setTextFieldValById('initial-money', remainBalance-inputAmount);
     setTextFieldValById(donationId, donateBalance+inputAmount);
     showDonationModal();
     makeDonationHistory(donationType,inputAmount);
